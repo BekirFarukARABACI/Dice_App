@@ -50,9 +50,11 @@ class MainActivity : AppCompatActivity() {
                     counter++
                     if (counter>10){
                         diceImg1.setImageResource(getRandomImageResource())
+                        diceImg.setImageResource(getRandomImageResource())
                         btnRoll.isEnabled = true
                     }else{
                         diceImg1.setImageResource(getRandomImageResource())
+                        diceImg.setImageResource(getRandomImageResource())
                         Handler(Looper.getMainLooper()).postDelayed(this,100)
                     }
                 }
